@@ -1,0 +1,196 @@
+/* ── Global ── */
+body {
+    font-family: "Times New Roman", Times, serif;
+    color: #222;
+    background-color: #f9f9f7;
+}
+
+/* ── Navbar ── */
+.navbar {
+    background-color: #1a3a2a !important;
+    padding: 0.6rem 1.5rem;
+}
+.navbar .nav-link {
+    color: #c8e6c9 !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.4rem 0.75rem;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+.navbar .nav-link:hover {
+    background-color: #2e6b45;
+    color: #fff !important;
+}
+.navbar-brand {
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/* ── Hero (index page) ── */
+.hero {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2.5rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.hero img {
+    width: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.55);
+}
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+.hero-text h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    margin-bottom: 0.4rem;
+}
+.hero-text h1 span {
+    color: #a5d6a7;
+    font-family: monospace;
+}
+.hero-text p {
+    font-size: 1.1rem;
+    color: #e8f5e9;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+}
+
+/* ── Section headings ── */
+h2.section-title {
+    color: #1a3a2a;
+    border-left: 5px solid #2e6b45;
+    padding-left: 0.75rem;
+    margin: 2rem 0 1rem;
+    font-size: 1.4rem;
+}
+
+/* ── Goal cards ── */
+.goal-card {
+    display: block;
+    background: #fff;
+    border: 1px solid #dde;
+    border-radius: 8px;
+    padding: 1.2rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #1a3a2a;
+    font-weight: 600;
+    transition: transform 0.15s, box-shadow 0.15s;
+    height: 100%;
+}
+.goal-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    color: #2e6b45;
+    text-decoration: none;
+}
+.goal-card .goal-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* ── Motivations table ── */
+.motiv-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+}
+.motiv-table th {
+    background-color: #1a3a2a;
+    color: #fff;
+    padding: 10px 14px;
+    text-align: left;
+    font-size: 0.95rem;
+}
+.motiv-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 0.9rem;
+    vertical-align: top;
+}
+.motiv-table tr:nth-child(even) td {
+    background-color: #f1f8f2;
+}
+
+/* ── Sub-page header ── */
+.page-header {
+    background: linear-gradient(135deg, #1a3a2a, #2e6b45);
+    color: #fff;
+    border-radius: 8px;
+    padding: 2rem 2.5rem;
+    margin-bottom: 2rem;
+}
+.page-header h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 0.4rem;
+}
+.page-header p {
+    color: #c8e6c9;
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* ── Content sections ── */
+.content-section {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #e8e8e8;
+}
+.content-section h3 {
+    color: #2e6b45;
+    margin-bottom: 0.75rem;
+    font-size: 1.15rem;
+}
+.content-section ul li {
+    margin-bottom: 0.4rem;
+}
+.content-section ul li:hover {
+    color: #2e6b45;
+}
+
+/* ── Quote block ── */
+blockquote.islamic-quote {
+    border-left: 4px solid #a5d6a7;
+    background: #f1f8f2;
+    padding: 1rem 1.5rem;
+    border-radius: 0 6px 6px 0;
+    font-style: italic;
+    color: #333;
+    margin: 1.5rem 0;
+}
+blockquote.islamic-quote cite {
+    display: block;
+    margin-top: 0.5rem;
+    font-style: normal;
+    font-weight: 600;
+    color: #1a3a2a;
+    font-size: 0.9rem;
+}
+
+/* ── Footer ── */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    border-top: 1px solid #dde;
+    color: #888;
+    font-size: 0.85rem;
+}
