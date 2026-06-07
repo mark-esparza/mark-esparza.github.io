@@ -185,6 +185,44 @@ blockquote.islamic-quote cite {
     font-size: 0.9rem;
 }
 
+/* ── Writing & Civic Record ── */
+.record-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.record-entry {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #eee;
+}
+.record-entry:last-child {
+    border-bottom: none;
+}
+.record-date {
+    flex: 0 0 6.5rem;
+    color: #888;
+    font-size: 0.85rem;
+}
+.record-type {
+    display: inline-block;
+    background: #1a3a2a;
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding: 0.15rem 0.55rem;
+    border-radius: 12px;
+}
+.record-venue {
+    color: #666;
+    font-style: italic;
+}
+
 /* ── Footer ── */
 footer {
     text-align: center;
@@ -193,4 +231,19 @@ footer {
     border-top: 1px solid #dde;
     color: #888;
     font-size: 0.85rem;
+}
+footer p {
+    margin: 0 0 0.4rem;
+}
+.footer-contact a {
+    color: #2e6b45;
+    text-decoration: none;
+    font-weight: 600;
+}
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+.footer-sep {
+    color: #bbb;
+    margin: 0 0.5rem;
 }
