@@ -115,17 +115,6 @@
     font-size: 13px;
     text-shadow: 1px 1px 0 #0a246a;
   }
-  .titlebar .btns { display: flex; gap: 2px; flex-shrink: 0; }
-  .titlebar .btns span {
-    display: inline-block;
-    width: 21px; height: 21px;
-    border: 1px solid #fff;
-    border-radius: 3px;
-    background: linear-gradient(to bottom, #4f8cf0, #2a5ed0);
-    font: bold 12px/19px Tahoma, sans-serif;
-    text-align: center;
-  }
-  .titlebar .btns span.x { background: linear-gradient(to bottom, #e8775a, #c3401d); }
   .menubar {
     padding: 3px 6px;
     border-bottom: 1px solid var(--rule);
@@ -182,7 +171,6 @@
   .small { font-size: 11px; color: var(--muted); margin: 2px 0; }
   @media (max-width: 520px) {
     body { padding: 12px 8px 24px; }
-    .titlebar .btns { display: none; }
     .body { padding: 8px; }
   }
 </style>
@@ -192,7 +180,6 @@
 <div class="window">
   <div class="titlebar">
     <span>Mark Esparza :: Research Profile</span>
-    <span class="btns" aria-hidden="true"><span>_</span><span>&#9633;</span><span class="x">&#215;</span></span>
   </div>
   <nav class="menubar">
     <a href="#interests">Interests</a>
