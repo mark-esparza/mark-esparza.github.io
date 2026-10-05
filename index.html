@@ -1,211 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Mark Esparza is a medical student at Oklahoma State University College of Osteopathic Medicine and a licensed real estate agent in Tulsa, Oklahoma, building software for structural biology, chemistry, and finance.">
-    <meta name="author" content="Mark Esparza">
-    <link rel="canonical" href="https://mark-esparza.github.io/">
-    <meta property="og:title" content="Mark Esparza | Medical Student in Tulsa, Oklahoma">
-    <meta property="og:description" content="Mark Esparza is a medical student at Oklahoma State University College of Osteopathic Medicine and a licensed real estate agent in Tulsa, Oklahoma, building software for structural biology, chemistry, and finance.">
-    <meta property="og:url" content="https://mark-esparza.github.io/">
-    <meta property="og:type" content="profile">
-    <script type="application/ld+json">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mark Esparza | Research Profile</title>
+<meta name="description" content="Research profile of Mark Esparza, osteopathic medical student at Oklahoma State University Center for Health Sciences in Tulsa, Oklahoma. Research software with DOIs, interests in neurology, ophthalmology, and computational structural biology.">
+<meta name="author" content="Mark Esparza">
+<link rel="canonical" href="https://mark-esparza.github.io/">
+<meta property="og:title" content="Mark Esparza | Research Profile">
+<meta property="og:description" content="Osteopathic medical student at OSU Center for Health Sciences. Research software, identifiers, and academic profile.">
+<meta property="og:url" content="https://mark-esparza.github.io/">
+<meta property="og:type" content="profile">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Mark Esparza",
-  "url": "https://mark-esparza.github.io/",
-  "jobTitle": "Medical Student",
-  "affiliation": {
-    "@type": "CollegeOrUniversity",
-    "name": "Oklahoma State University College of Osteopathic Medicine"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Tulsa",
-    "addressRegion": "OK",
-    "addressCountry": "US"
-  },
-  "knowsAbout": [
-    "Medicine",
-    "Structural biology",
-    "Real estate",
-    "Software development"
-  ],
-  "sameAs": [
-    "https://github.com/mark-esparza",
-    "https://www.linkedin.com/in/mark-esparza/",
-    "https://orcid.org/0009-0000-5171-102X",
-    "https://markesparza.tulsaareahomesearch.com/"
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://mark-esparza.github.io/#person",
+      "name": "Mark Esparza",
+      "url": "https://mark-esparza.github.io/",
+      "identifier": "https://orcid.org/0009-0000-5171-102X",
+      "jobTitle": "Osteopathic Medical Student",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "Oklahoma State University Center for Health Sciences, College of Osteopathic Medicine",
+        "address": {"@type": "PostalAddress", "addressLocality": "Tulsa", "addressRegion": "OK", "addressCountry": "US"}
+      },
+      "knowsAbout": ["Neurology", "Ophthalmology", "Structural biology", "Protein-ligand interactions", "Cheminformatics"],
+      "sameAs": [
+        "https://orcid.org/0009-0000-5171-102X",
+        "https://github.com/mark-esparza",
+        "https://www.linkedin.com/in/mark-esparza/"
+      ]
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "SnaCleX: a browser-based structural biology workbench for protein–ligand interaction analysis",
+      "identifier": "https://doi.org/10.5281/zenodo.23167411",
+      "url": "https://zenodo.org/records/23167411",
+      "codeRepository": "https://github.com/mark-esparza/snaclex",
+      "version": "0.1.0",
+      "datePublished": "2026-10-05",
+      "author": {"@id": "https://mark-esparza.github.io/#person"}
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "Molecule Design Assistant (chemtool)",
+      "identifier": "https://doi.org/10.5281/zenodo.23167242",
+      "url": "https://zenodo.org/records/23167242",
+      "codeRepository": "https://github.com/mark-esparza/chemtool",
+      "version": "1.0.0",
+      "license": "https://www.apache.org/licenses/LICENSE-2.0",
+      "datePublished": "2026-10-05",
+      "author": {"@id": "https://mark-esparza.github.io/#person"}
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "Investment-Viability Analysis",
+      "identifier": "https://doi.org/10.5281/zenodo.23167234",
+      "url": "https://zenodo.org/records/23167234",
+      "codeRepository": "https://github.com/mark-esparza/investment-viability-analysis",
+      "version": "0.1.0",
+      "license": "https://opensource.org/licenses/MIT",
+      "datePublished": "2026-10-05",
+      "author": {"@id": "https://mark-esparza.github.io/#person"}
+    }
   ]
 }
-    </script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link href="styles.css" rel="stylesheet">
-    <title>Mark Esparza | Medical Student in Tulsa, Oklahoma</title>
+</script>
+<style>
+  :root {
+    --desk: #3a6ea5;
+    --face: #ece9d8;
+    --panel: #ffffff;
+    --ink: #000000;
+    --muted: #444444;
+    --link: #0000cc;
+    --visited: #551a8b;
+    --rule: #aca899;
+    --tag: #fffbe6;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 24px 16px 40px;
+    background: var(--desk);
+    color: var(--ink);
+    font-family: Tahoma, Verdana, "Segoe UI", Geneva, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.45;
+  }
+  a { color: var(--link); }
+  a:visited { color: var(--visited); }
+  .window {
+    max-width: 780px;
+    margin: 0 auto;
+    background: var(--face);
+    border: 1px solid #0a246a;
+    border-radius: 6px 6px 0 0;
+    box-shadow: 2px 2px 0 rgba(0,0,0,.35);
+  }
+  .titlebar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 4px 6px 4px 8px;
+    background: linear-gradient(to bottom, #3d7be0 0%, #2459c7 45%, #1c49b0 100%);
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+    text-shadow: 1px 1px 0 #0a246a;
+  }
+  .titlebar .btns { display: flex; gap: 2px; flex-shrink: 0; }
+  .titlebar .btns span {
+    display: inline-block;
+    width: 21px; height: 21px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background: linear-gradient(to bottom, #4f8cf0, #2a5ed0);
+    font: bold 12px/19px Tahoma, sans-serif;
+    text-align: center;
+  }
+  .titlebar .btns span.x { background: linear-gradient(to bottom, #e8775a, #c3401d); }
+  .menubar {
+    padding: 3px 6px;
+    border-bottom: 1px solid var(--rule);
+    font-size: 12px;
+  }
+  .menubar a { color: var(--ink); text-decoration: none; margin-right: 14px; display: inline-block; }
+  .menubar a:hover { text-decoration: underline; }
+  .body { padding: 12px; }
+  .ident {
+    background: var(--panel);
+    border: 2px inset var(--face);
+    padding: 12px;
+  }
+  .ident h1 { font-size: 20px; margin: 0 0 2px; font-family: Verdana, Tahoma, sans-serif; }
+  .ident .role { margin: 0 0 8px; color: var(--muted); }
+  .ident table { border-collapse: collapse; font-size: 12px; }
+  .ident td { padding: 1px 10px 1px 0; vertical-align: top; }
+  .ident td:first-child { font-weight: bold; white-space: nowrap; }
+  fieldset {
+    margin: 12px 0 0;
+    padding: 8px 12px 10px;
+    border: 1px solid #d0d0bf;
+    border-radius: 3px;
+    background: var(--face);
+  }
+  legend { color: #0046d5; font-weight: bold; padding: 0 4px; }
+  ul { margin: 4px 0 0; padding-left: 20px; }
+  li { margin: 2px 0; }
+  .cite { margin: 6px 0 12px; padding-left: 22px; text-indent: -22px; overflow-wrap: anywhere; }
+  .cite:last-child { margin-bottom: 2px; }
+  .meta { display: block; text-indent: 0; margin-top: 2px; font-size: 11px; color: var(--muted); }
+  .tag {
+    display: inline-block;
+    padding: 0 4px;
+    border: 1px solid var(--rule);
+    background: var(--tag);
+    font-size: 11px;
+    color: var(--ink);
+    margin-right: 6px;
+  }
+  table.ids { border-collapse: collapse; width: 100%; background: var(--panel); font-size: 12px; }
+  table.ids th, table.ids td { border: 1px solid var(--rule); padding: 3px 6px; text-align: left; vertical-align: top; }
+  table.ids th { background: #f3f2ea; width: 90px; }
+  table.ids td { overflow-wrap: anywhere; }
+  .statusbar {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--rule);
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .statusbar span { padding: 3px 8px; border-right: 1px solid var(--rule); }
+  .statusbar span:last-child { border-right: 0; }
+  .small { font-size: 11px; color: var(--muted); margin: 2px 0; }
+  @media (max-width: 520px) {
+    body { padding: 12px 8px 24px; }
+    .titlebar .btns { display: none; }
+    .body { padding: 8px; }
+  }
+</style>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-md">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Mark Esparza</a>
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="student.html">Student of Knowledge</a></li>
-                <li class="nav-item"><a class="nav-link" href="physician.html">Physician</a></li>
-                <li class="nav-item"><a class="nav-link" href="research.html">Researcher</a></li>
-                <li class="nav-item"><a class="nav-link" href="scholar.html">Author</a></li>
-                <li class="nav-item"><a class="nav-link" href="realestate.html">Real Estate</a></li>
-                <li class="nav-item"><a class="nav-link" href="businessowner.html">Business Owner</a></li>
-                <li class="nav-item"><a class="nav-link" href="contentcreator.html">Digital Creator</a></li>
-            </ul>
-        </div>
-    </nav>
+<div class="window">
+  <div class="titlebar">
+    <span>Mark Esparza :: Research Profile</span>
+    <span class="btns" aria-hidden="true"><span>_</span><span>&#9633;</span><span class="x">&#215;</span></span>
+  </div>
+  <nav class="menubar">
+    <a href="#interests">Interests</a>
+    <a href="#education">Education</a>
+    <a href="#software">Software</a>
+    <a href="#ids">Identifiers</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <main class="container p-4">
+  <main class="body">
 
-        <div class="hero">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Sunrise_over_the_sea.jpg/1280px-Sunrise_over_the_sea.jpg" alt="Sunrise over the sea">
-            <div class="hero-text">
-                <h1>Hello, I'm <span id="name">Mark Esparza</span></h1>
-                <p>Medical student and lifelong learner</p>
-            </div>
-        </div>
+    <div class="ident">
+      <h1>Mark Esparza</h1>
+      <p class="role">Osteopathic Medical Student (DO candidate)</p>
+      <table>
+        <tr><td>Institution</td><td>College of Osteopathic Medicine,<br>Oklahoma State University Center for Health Sciences</td></tr>
+        <tr><td>Location</td><td>Tulsa, Oklahoma, USA</td></tr>
+        <tr><td>ORCID iD</td><td><a href="https://orcid.org/0009-0000-5171-102X">0009-0000-5171-102X</a></td></tr>
+      </table>
+    </div>
 
-        <h2 class="section-title">About Me</h2>
-        <div class="content-section">
-            <p>I'm a 2nd year medical student from Tulsa, Oklahoma, currently attending Oklahoma State University College of Osteopathic Medicine (OSU-COM). My ambitions extend well beyond medicine — from real estate and business to writing and content creation, I'm building a life of purpose, impact, and service to others.</p>
-        </div>
+    <fieldset id="interests">
+      <legend>Research and Clinical Interests</legend>
+      <ul>
+        <li>Neurology</li>
+        <li>Ophthalmology</li>
+        <li>Computational structural biology: protein and ligand interactions, binding pocket analysis, evolutionary conservation</li>
+        <li>Cheminformatics and molecular property prediction</li>
+      </ul>
+    </fieldset>
 
-        <h2 class="section-title">My Goals</h2>
-        <div class="row g-3 mb-4">
-            <div class="col-6 col-md-3">
-                <a href="student.html" class="goal-card">Student of Knowledge</a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="physician.html" class="goal-card">Physician</a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="research.html" class="goal-card">Researcher</a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="scholar.html" class="goal-card">Author</a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="realestate.html" class="goal-card">Real Estate</a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="businessowner.html" class="goal-card">Business Owner</a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="contentcreator.html" class="goal-card">Digital Creator</a>
-            </div>
-        </div>
+    <fieldset id="education">
+      <legend>Education</legend>
+      <ul>
+        <li><b>Doctor of Osteopathic Medicine (DO)</b>, in progress<br>
+          College of Osteopathic Medicine, Oklahoma State University Center for Health Sciences, Tulsa, Oklahoma</li>
+      </ul>
+    </fieldset>
 
-        <h2 class="section-title">Why These Goals?</h2>
-        <div class="content-section">
-            <table class="motiv-table">
-                <tr>
-                    <th>Motivation</th>
-                    <th>How My Goals Serve It</th>
-                </tr>
-                <tr>
-                    <td>Teach and share knowledge</td>
-                    <td>Authorship and content creation let me share what I learn with a wide audience.</td>
-                </tr>
-                <tr>
-                    <td>Give back generously</td>
-                    <td>Business and real estate income create financial freedom to help others.</td>
-                </tr>
-                <tr>
-                    <td>Serve underserved communities</td>
-                    <td>Medicine and research skills make me useful wherever people need care most.</td>
-                </tr>
-                <tr>
-                    <td>Support my family</td>
-                    <td>Multiple income streams ensure stability and the ability to provide well for those I love.</td>
-                </tr>
-            </table>
-        </div>
+    <fieldset id="publications">
+      <legend>Publications</legend>
+      <p class="small">Peer reviewed publications will be listed here as they appear. The current list of works is kept on <a href="https://orcid.org/0009-0000-5171-102X">ORCID</a>.</p>
+    </fieldset>
 
-        <h2 class="section-title">Projects</h2>
-        <div class="content-section">
-            <p>Software I build and maintain. Source code is on <a href="https://github.com/mark-esparza" target="_blank" rel="noopener noreferrer">GitHub</a>, and my research profile is on <a href="https://orcid.org/0009-0000-5171-102X" target="_blank" rel="noopener noreferrer">ORCID</a>.</p>
-        </div>
-        <div class="row g-3 mb-4">
-            <div class="col-12 col-md-6">
-                <a href="https://github.com/mark-esparza/snaclex" class="goal-card" target="_blank" rel="noopener noreferrer">
-                    <strong>snaclex</strong><br><small>SnaCleX: a protein and ligand structural biology web app for exploring molecular binding pockets. (Python)</small>
-                </a>
-            </div>
-            <div class="col-12 col-md-6">
-                <a href="https://github.com/mark-esparza/chemtool" class="goal-card" target="_blank" rel="noopener noreferrer">
-                    <strong>chemtool</strong><br><small>Create and analyze molecules. (TypeScript)</small>
-                </a>
-            </div>
-            <div class="col-12 col-md-6">
-                <a href="https://github.com/mark-esparza/investment-viability-analysis" class="goal-card" target="_blank" rel="noopener noreferrer">
-                    <strong>investment-viability-analysis</strong><br><small>Pulls SEC EDGAR filings and uploaded statements into finance metrics, a live formula Excel workbook, and a written report. (Python)</small>
-                </a>
-            </div>
-            <div class="col-12 col-md-6">
-                <a href="https://github.com/mark-esparza/finance-hub-" class="goal-card" target="_blank" rel="noopener noreferrer">
-                    <strong>finance-hub</strong><br><small>An AI assistant for personal finance. (TypeScript)</small>
-                </a>
-            </div>
-            <div class="col-12 col-md-6">
-                <a href="https://github.com/mark-esparza/bible-app" class="goal-card" target="_blank" rel="noopener noreferrer">
-                    <strong>bible-app</strong><br><small>A virtual Bible app. (TypeScript)</small>
-                </a>
-            </div>
-        </div>
+    <fieldset id="software">
+      <legend>Research Software (archived with DOIs)</legend>
 
-        <h2 class="section-title">Writing &amp; Civic Record</h2>
-        <div class="content-section">
-            <p>A running record of published writing, op-eds, and community and civic service. This section grows over time as pieces are published and appointments come through.</p>
+      <p class="cite">1. Esparza, M. (2026). <i>SnaCleX: a browser-based structural biology workbench for protein–ligand interaction analysis</i> (Version 0.1.0) [Computer software]. Zenodo. <a href="https://doi.org/10.5281/zenodo.23167411">https://doi.org/10.5281/zenodo.23167411</a>
+        <span class="meta">Contact profiling, pocket detection and ranking, conservation scoring, and exploratory docking from RCSB PDB structures. <span class="tag">Source restricted</span> <a href="https://github.com/mark-esparza/snaclex">GitHub</a></span></p>
 
-            <!--
-                HOW TO ADD AN ENTRY
-                Copy one of the example blocks below into the <ul class="record-list"> list
-                and fill in the details. Remove the "Entries coming soon" line once you add a real one.
+      <p class="cite">2. Esparza, M. (2026). <i>Molecule Design Assistant (chemtool)</i> (Version v1.0.0) [Computer software]. Zenodo. <a href="https://doi.org/10.5281/zenodo.23167242">https://doi.org/10.5281/zenodo.23167242</a>
+        <span class="meta">Reaction balancing, analog design with property scoring, and live PubChem and HMDB lookups. <span class="tag">Apache 2.0</span> <a href="https://github.com/mark-esparza/chemtool">GitHub</a></span></p>
 
-                Op-ed / article example:
-                <li class="record-entry">
-                    <span class="record-date">Mar 2026</span>
-                    <span class="record-type">Op-Ed</span>
-                    <a href="https://example.com/article" target="_blank" rel="noopener noreferrer">Title of the published piece</a>
-                    <span class="record-venue">— Tulsa World</span>
-                </li>
+      <p class="cite">3. Esparza, M. (2026). <i>Investment-Viability Analysis</i> (Version v0.1.0) [Computer software]. Zenodo. <a href="https://doi.org/10.5281/zenodo.23167234">https://doi.org/10.5281/zenodo.23167234</a>
+        <span class="meta">Finance metrics and a live formula Excel workbook built from SEC EDGAR filings. <span class="tag">MIT</span> <a href="https://github.com/mark-esparza/investment-viability-analysis">GitHub</a></span></p>
+    </fieldset>
 
-                Board / appointment example:
-                <li class="record-entry">
-                    <span class="record-date">2026–present</span>
-                    <span class="record-type">Board</span>
-                    Member, Example Community Health Board
-                </li>
-            -->
+    <fieldset id="ids">
+      <legend>Identifiers and Profiles</legend>
+      <table class="ids">
+        <tr><th>ORCID</th><td><a href="https://orcid.org/0009-0000-5171-102X">orcid.org/0009-0000-5171-102X</a></td></tr>
+        <tr><th>Zenodo</th><td><a href="https://zenodo.org/search?q=metadata.creators.person_or_org.identifiers.identifier%3A%220009-0000-5171-102X%22">Records by Mark Esparza</a></td></tr>
+        <tr><th>GitHub</th><td><a href="https://github.com/mark-esparza">github.com/mark-esparza</a></td></tr>
+        <tr><th>LinkedIn</th><td><a href="https://www.linkedin.com/in/mark-esparza/">linkedin.com/in/mark-esparza</a></td></tr>
+      </table>
+    </fieldset>
 
-            <ul class="record-list">
-                <li class="record-entry"><em>Entries coming soon.</em></li>
-            </ul>
-        </div>
+    <fieldset id="contact">
+      <legend>Contact</legend>
+      <a href="mailto:esparza.mark187@gmail.com">esparza.mark187@gmail.com</a>
+    </fieldset>
 
-    </main>
+  </main>
 
-    <footer>
-        <p class="footer-credit">&copy; 2026 Mark Esparza</p>
-        <p class="footer-contact">
-            <a href="mailto:esparza.mark187@gmail.com">esparza.mark187@gmail.com</a>
-            <span class="footer-sep">&middot;</span>
-            <a href="https://www.linkedin.com/in/mark-esparza/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <span class="footer-sep">&middot;</span>
-            <a href="https://github.com/mark-esparza" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <span class="footer-sep">&middot;</span>
-            <a href="https://orcid.org/0009-0000-5171-102X" target="_blank" rel="noopener noreferrer">ORCID</a>
-        </p>
-    </footer>
+  <div class="statusbar">
+    <span>Last updated: October 5, 2026</span>
+    <span>&copy; 2026 Mark Esparza</span>
+  </div>
+</div>
 
-    <script src="script.js"></script>
 </body>
 </html>
