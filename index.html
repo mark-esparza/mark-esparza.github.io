@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mark Esparza | Research Profile</title>
-<meta name="description" content="Research profile of Mark Esparza, osteopathic medical student at Oklahoma State University Center for Health Sciences in Tulsa, Oklahoma. A preprint and research software with DOIs, interests in neurology, ophthalmology, and computational structural biology.">
+<meta name="description" content="Research profile of Mark Esparza, osteopathic medical student at Oklahoma State University Center for Health Sciences in Tulsa, Oklahoma. Preprints and research software with DOIs, interests in neurology, ophthalmology, eye movement recording, and computational structural biology.">
 <meta name="author" content="Mark Esparza">
 <link rel="canonical" href="https://mark-esparza.github.io/">
 <meta property="og:title" content="Mark Esparza | Research Profile">
@@ -33,15 +33,27 @@
       ],
       "hasCredential": [
         {"@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "Master of Business Administration", "recognizedBy": {"@type": "CollegeOrUniversity", "name": "Oklahoma State University"}},
-        {"@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "Bachelor of Science", "recognizedBy": {"@type": "CollegeOrUniversity", "name": "University of Oklahoma"}},
+        {"@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "Bachelor of Science in Community Health", "recognizedBy": {"@type": "CollegeOrUniversity", "name": "University of Oklahoma"}},
         {"@type": "EducationalOccupationalCredential", "credentialCategory": "certificate", "name": "Professional Certificate in Computer Science for Python Programming", "recognizedBy": {"@type": "Organization", "name": "HarvardX"}}
       ],
-      "knowsAbout": ["Neurology", "Ophthalmology", "Structural biology", "Protein-ligand interactions", "Cheminformatics"],
+      "knowsAbout": ["Neurology", "Ophthalmology", "Neuro-ophthalmology", "Eye movement recording", "Structural biology", "Protein-ligand interactions", "Cheminformatics", "Health literacy"],
       "sameAs": [
         "https://orcid.org/0009-0000-5171-102X",
+        "https://experts.okstate.edu/mark.esparza",
         "https://github.com/mark-esparza",
         "https://www.linkedin.com/in/mark-esparza/"
       ]
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "additionalType": "Preprint",
+      "headline": "OcuTrace: Smartphone Oculomotor Recording for Neurology and Clinical Research",
+      "identifier": "https://doi.org/10.5281/zenodo.23345364",
+      "url": "https://zenodo.org/records/23345364",
+      "datePublished": "2026-10-13",
+      "publisher": {"@type": "Organization", "name": "Zenodo"},
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "author": {"@id": "https://mark-esparza.github.io/#person"}
     },
     {
       "@type": "ScholarlyArticle",
@@ -52,6 +64,17 @@
       "datePublished": "2026-10-12",
       "publisher": {"@type": "Organization", "name": "Zenodo"},
       "license": "https://creativecommons.org/licenses/by/4.0/",
+      "author": {"@id": "https://mark-esparza.github.io/#person"}
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "OcuTrace: browser-based nystagmus and saccade recording from phone video",
+      "identifier": "https://doi.org/10.5281/zenodo.23345223",
+      "url": "https://zenodo.org/records/23345223",
+      "codeRepository": "https://github.com/mark-esparza/ocutrace",
+      "version": "0.3.0",
+      "license": "https://opensource.org/licenses/MIT",
+      "datePublished": "2026-10-13",
       "author": {"@id": "https://mark-esparza.github.io/#person"}
     },
     {
@@ -205,7 +228,9 @@
   <nav class="menubar">
     <a href="#interests">Interests</a>
     <a href="#education">Education</a>
+    <a href="#publications">Publications</a>
     <a href="#software">Software</a>
+    <a href="#outreach">Outreach</a>
     <a href="#ids">Identifiers</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -219,6 +244,7 @@
         <tr><td>Institution</td><td>College of Osteopathic Medicine,<br>Oklahoma State University Center for Health Sciences</td></tr>
         <tr><td>Location</td><td>Tulsa, Oklahoma, USA</td></tr>
         <tr><td>ORCID iD</td><td><a href="https://orcid.org/0009-0000-5171-102X">0009-0000-5171-102X</a></td></tr>
+        <tr><td>OSU Experts</td><td><a href="https://experts.okstate.edu/mark.esparza">experts.okstate.edu/mark.esparza</a></td></tr>
       </table>
     </div>
 
@@ -227,8 +253,10 @@
       <ul>
         <li>Neurology</li>
         <li>Ophthalmology</li>
+        <li>Eye movement recording: smartphone measurement of nystagmus and saccades</li>
         <li>Computational structural biology: protein and ligand interactions, binding pocket analysis, evolutionary conservation</li>
         <li>Cheminformatics and molecular property prediction</li>
+        <li>Health literacy and patient preparation for medical visits</li>
       </ul>
     </fieldset>
 
@@ -237,9 +265,11 @@
       <ul>
         <li><b>Doctor of Osteopathic Medicine (DO)</b>, in progress<br>
           College of Osteopathic Medicine, Oklahoma State University Center for Health Sciences, Tulsa, Oklahoma</li>
+        <li><b>Master of Science (MS) in Biomedical Sciences</b>, in progress<br>
+          Oklahoma State University Center for Health Sciences, Tulsa, Oklahoma</li>
         <li><b>Master of Business Administration (MBA)</b>, 2025<br>
           Oklahoma State University, Stillwater, Oklahoma</li>
-        <li><b>Bachelor of Science (BS)</b><br>
+        <li><b>Bachelor of Science (BS) in Community Health</b>, 2023<br>
           University of Oklahoma, Norman, Oklahoma</li>
       </ul>
       <p style="margin:8px 0 2px"><b>Certificates</b></p>
@@ -251,29 +281,45 @@
     <fieldset id="publications">
       <legend>Publications and Preprints</legend>
 
-      <p class="cite">1. Esparza, M. (2026). <i>SnaCleX: a browser-based structural biology workbench for protein–ligand interaction analysis, pocket prioritization, and exploratory docking</i> [Preprint]. Zenodo. <a href="https://doi.org/10.5281/zenodo.23326777">https://doi.org/10.5281/zenodo.23326777</a>
+      <p class="cite">1. Esparza, M. (2026). <i>OcuTrace: Smartphone Oculomotor Recording for Neurology and Clinical Research</i> [Preprint]. Zenodo. <a href="https://doi.org/10.5281/zenodo.23345364">https://doi.org/10.5281/zenodo.23345364</a>
+        <span class="meta">Preprint, not peer reviewed. Proposes a smartphone platform for standardized oculomotor testing and reports synthetic validation of the browser prototype. <span class="tag">CC BY 4.0</span> <a href="https://zenodo.org/records/23345364/files/OcuTrace_perspective_preprint.pdf">PDF</a></span></p>
+
+      <p class="cite">2. Esparza, M. (2026). <i>SnaCleX: a browser-based structural biology workbench for protein–ligand interaction analysis, pocket prioritization, and exploratory docking</i> [Preprint]. Zenodo. <a href="https://doi.org/10.5281/zenodo.23326777">https://doi.org/10.5281/zenodo.23326777</a>
         <span class="meta">Preprint, not peer reviewed. Describes the SnaCleX software and its benchmark on the Astex Diverse and PoseBusters sets. <span class="tag">CC BY 4.0</span> <a href="https://zenodo.org/records/23326777/files/Esparza_SnaCleX_preprint_v1_Zenodo.pdf">PDF</a></span></p>
 
-      <p class="small">Peer reviewed publications will be listed here as they appear. The current list of works is kept on <a href="https://orcid.org/0009-0000-5171-102X">ORCID</a>.</p>
+      <p style="margin:10px 0 2px"><b>In preparation</b></p>
+      <p class="cite">3. Esparza, M., &amp; Rudd, K. <i>Structured Pre-Visit Preparation for Medical Appointments: A Practical Application and the Development of a Bilingual, Accessibility-Informed Community Toolkit</i>. Manuscript in preparation.</p>
+
+      <p class="small">Peer reviewed publications will be listed here as they appear. The current list of works is also kept on <a href="https://orcid.org/0009-0000-5171-102X">ORCID</a> and the <a href="https://experts.okstate.edu/mark.esparza">OSU Experts Directory</a>.</p>
     </fieldset>
 
     <fieldset id="software">
       <legend>Research Software (archived with DOIs)</legend>
 
-      <p class="cite">1. Esparza, M. (2026). <i>SnaCleX: a browser-based structural biology workbench for protein–ligand interaction analysis</i> (Version 0.1.0) [Computer software]. Zenodo. <a href="https://doi.org/10.5281/zenodo.23167411">https://doi.org/10.5281/zenodo.23167411</a>
+      <p class="cite">1. Esparza, M. (2026). <i>OcuTrace: browser-based nystagmus and saccade recording from phone video</i> (Version 0.3.0) [Computer software]. Zenodo. <a href="https://doi.org/10.5281/zenodo.23345223">https://doi.org/10.5281/zenodo.23345223</a>
+        <span class="meta">Turns a phone video of the eyes into a quantitative oculomotor recording, with a standardized task battery and Eye-Tracking-BIDS export. Research prototype, not a medical device. <span class="tag">MIT</span> <a href="https://github.com/mark-esparza/ocutrace">GitHub</a> <a href="https://mark-esparza.github.io/ocutrace/">Live</a></span></p>
+
+      <p class="cite">2. Esparza, M. (2026). <i>SnaCleX: a browser-based structural biology workbench for protein–ligand interaction analysis</i> (Version 0.1.0) [Computer software]. Zenodo. <a href="https://doi.org/10.5281/zenodo.23167411">https://doi.org/10.5281/zenodo.23167411</a>
         <span class="meta">Contact profiling, pocket detection and ranking, conservation scoring, and exploratory docking from RCSB PDB structures. <span class="tag">MIT</span> <a href="https://github.com/mark-esparza/snaclex">GitHub</a></span></p>
 
-      <p class="cite">2. Esparza, M. (2026). <i>Molecule Design Assistant (chemtool)</i> (Version v1.0.0) [Computer software]. Zenodo. <a href="https://doi.org/10.5281/zenodo.23167242">https://doi.org/10.5281/zenodo.23167242</a>
+      <p class="cite">3. Esparza, M. (2026). <i>Molecule Design Assistant (chemtool)</i> (Version v1.0.0) [Computer software]. Zenodo. <a href="https://doi.org/10.5281/zenodo.23167242">https://doi.org/10.5281/zenodo.23167242</a>
         <span class="meta">Reaction balancing, analog design with property scoring, and live PubChem and HMDB lookups. <span class="tag">Apache 2.0</span> <a href="https://github.com/mark-esparza/chemtool">GitHub</a></span></p>
 
-      <p class="cite">3. Esparza, M. (2026). <i>Investment-Viability Analysis</i> (Version v0.1.0) [Computer software]. Zenodo. <a href="https://doi.org/10.5281/zenodo.23167234">https://doi.org/10.5281/zenodo.23167234</a>
+      <p class="cite">4. Esparza, M. (2026). <i>Investment-Viability Analysis</i> (Version v0.1.0) [Computer software]. Zenodo. <a href="https://doi.org/10.5281/zenodo.23167234">https://doi.org/10.5281/zenodo.23167234</a>
         <span class="meta">Finance metrics and a live formula Excel workbook built from SEC EDGAR filings. <span class="tag">MIT</span> <a href="https://github.com/mark-esparza/investment-viability-analysis">GitHub</a></span></p>
+    </fieldset>
+
+    <fieldset id="outreach">
+      <legend>Presentations and Outreach</legend>
+      <p class="cite">1. Esparza, M. (2026, October 6). <i>Bilingual pre-visit preparation toolkit (trifold display and visit planner)</i>. Centered Around Health Fair, Tulsa, Oklahoma.
+        <span class="meta">English and Spanish educational materials helping patients prepare for medical appointments.</span></p>
     </fieldset>
 
     <fieldset id="ids">
       <legend>Identifiers and Profiles</legend>
       <table class="ids">
         <tr><th>ORCID</th><td><a href="https://orcid.org/0009-0000-5171-102X">orcid.org/0009-0000-5171-102X</a></td></tr>
+        <tr><th>OSU Experts</th><td><a href="https://experts.okstate.edu/mark.esparza">experts.okstate.edu/mark.esparza</a></td></tr>
         <tr><th>Zenodo</th><td><a href="https://zenodo.org/search?q=metadata.creators.person_or_org.identifiers.identifier%3A%220009-0000-5171-102X%22">Records by Mark Esparza</a></td></tr>
         <tr><th>GitHub</th><td><a href="https://github.com/mark-esparza">github.com/mark-esparza</a></td></tr>
         <tr><th>LinkedIn</th><td><a href="https://www.linkedin.com/in/mark-esparza/">linkedin.com/in/mark-esparza</a></td></tr>
@@ -288,7 +334,7 @@
   </main>
 
   <div class="statusbar">
-    <span>Last updated: October 5, 2026</span>
+    <span>Last updated: October 13, 2026</span>
     <span>&copy; 2026 Mark Esparza</span>
   </div>
 </div>
